@@ -4,13 +4,9 @@ version: "2"
 
 services:
   web:
-    # The name of the Docker image.
-    image: "faraday/rails_hello"
-    # The GitHub repository containing the source code for this image,
-    # for use with `cage repo clone`.
-    build: "https://github.com/faradayio/rails_hello.git"
+    build: "https://github.com/andrewsardone/intro-graphql-talk-ruby.git"
     ports:
-    - "3000:3000"
+      - "3000:3000"
     labels:
       # The directory where our source code gets mounted into the container.
       io.fdy.cage.srcdir: "/usr/src/app"
